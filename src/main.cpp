@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-const char* ssid = "LOCAL_HOST";
-const char* password = "@thx1138";
+const char* ssid = "";
+const char* password = "";
 HTTPClient http;
 
 // instantiate thw server on the required port
@@ -32,7 +32,7 @@ void openWiFiConnection() {
   }
   
   Serial.println("");
-  Serial.println("WiFi foi de boa");
+  Serial.println("WiFi OK");
   Serial.print("IP addr: ");
   Serial.println(WiFi.localIP());
 }
